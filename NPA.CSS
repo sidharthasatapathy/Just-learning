@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+    font-family: monospace;
+    text-decoration-style: solid;
+    color: blue;
+    text-shadow: 3px 2px red;
+}
+p{
+    text-decoration: italic
+        
+}
+.main-text {
+    color:darkgreen;
+    background-color: burlywood;
+    border: 1px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top:-15px
+}
+img {
+    float:right;
+}

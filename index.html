@@ -1,0 +1,106 @@
+<html>
+<!--
+               QUESTEN TO ASK SIR===== WHEN I INSERT ROUTING CONCEPT IN PAGE, MY PAGE AUTO LOAD WHEN I REFRESH AND WHEN I CLICK THE ROUTIG LINK THEN PAGE IS OPEN IN BUTOM OF CURRENT PAGE-->
+
+<head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <title>My Quiz</title>
+    <link href="js/bootstrap.min.css" rel="stylesheet">
+    <link href="js/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="js/bootstrap.min.js" rel="stylesheet">
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        app = angular.module("myapp", ['ngRoute'])
+        app.config(function($routeProvider) {
+            $routeProvider
+                .when("/currency", {
+                    templateUrl: "currncy_cntry.html"
+                })
+                .when("/state", {
+                    templateUrl: "statecptl.HTML"
+                })
+
+        });
+
+
+        $(document).ready(function() {
+            $("#flip").click(function() {
+                $("#panel").slideToggle("slow");
+            });
+        });
+
+    </script>
+
+</head>
+
+<body ng-app="myapp">
+    <header>
+        <nav>
+            <div class="row">
+
+                <div class="logo">
+                    <img src="4b98ec878d847a098ea5ee57d55c24f7.PNG">
+                </div>
+                
+                <ul class="main-nav">
+                    <li><a href="#" class="col">HOME</a></li>
+                    <li><a href="#!currency" class="col">ABOUT US</a></li>
+                    <li><a href="#!state" class="col">SUGGEST US</a></li>
+                    <li><a href="#" class="col" id="flip">IMPORTANT LINK</a> </li>
+
+                    <div id="panel">
+                        <li><a href="http://www.bankersadda.com/p/interview-tips.html">Interview Tips</a></li><br>
+                        <li><a href="http://www.bankersadda.com/p/blog-page_49.html">Upcoming Jobs</a></li><br>
+                        <li><a href="http://www.bankersadda.com/p/current-affairs-2018.html">Daily GK updates</a></li><br>
+                        <li><a href="http://www.bankersadda.com/p/daily-ba-kit.html">Daily BA update</a></li><br>
+                    </div>
+
+                </ul>
+
+            </div>
+        </nav>
+
+        <div>
+            <marquee direction="right" width="50%">SBI PO Notification, 2018 to be out by April-May this year RBI GREAD-B=Preliminary Exam: June 2018 Mains Exam: July 2018
+            </marquee><br>
+            <marquee direction="left" width="50%">SBI PO Notification, 2018 to be out by April-May this year.................NABARD 2018= Preliminary Exam: 12th May 2018 Mains Exam: 6th June 2018...........<br>SBI CLERK= Preliminary Exam: June-July 2018...........Canara Bank PO 2018=Written Exam: 4th March 2018...... Mains Exam: 5th August 2018
+            </marquee>
+        </div>
+
+
+        <div class="hero">
+            <div class="line">
+                <h1>Work <span id="white">Hard</span> <br> Dream <span id="white">Big</span></h1>
+            </div>
+         
+            <div class="button-awesome">
+                <a href="currncy_cntry.html" class="btn btn-full">Currency List</a>
+                <a href="statecptl.HTML" class="btn btn-full">State-Capital-Chief Minister-Governor</a>
+                <a href="npa.html" class="btn btn-full">Non-performing asset</a>
+                <a href="#" class="btn btn-full">Important Books</a>
+            </div>
+        </div>
+        <!--   <div >
+        <marquee  direction="right" width="50%">SBI PO Notification, 2018 to be out by April-May this year                                                                           RBI GREAD-B=Preliminary Exam: June 2018
+Mains Exam: July 2018
+</marquee><br>
+              <marquee  direction="up" width="50%" height="30%;">SBI PO Notification, 2018 to be out by April-May this year<br><br>NABARD 2018= Preliminary Exam: 12th May 2018<br>
+Mains Exam: 6th June 2018 <br><br>SBI CLERK= Preliminary Exam: June-July 2018<br><br>Canara Bank PO 2018=Written Exam: 4th March 2018..<br><br>
+Mains Exam: 5th August 2018
+</marquee>
+    </div>-->
+    </header>
+    <ng-view></ng-view>
+    
+    
+    
+
+</body>
+
+</html>

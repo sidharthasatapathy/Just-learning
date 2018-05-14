@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html ng-app=myapp>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="js/bootstrap.min.js" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title></title>
+    <script src="ajs/ajs/angular.min.js"></script>
+
+
+
+
+    <script>
+        app = angular.module("myapp", [])
+            .controller("ctrl1", function($scope) {
+                $scope.xyz = [{
+                        "id": "1",
+
+                        "state": "Maharashtra",
+                        "city": "Mumbai",
+                        "cm": "Devendra fadanvis",
+                        "govv": "Chennamaneni Vidyasagar Rao"
+                    },
+
+                    {
+                        "state": "Andhra Pradesh",
+                        "city": "Hyderabad(de jure) Amaravati (de facto)",
+                        "cm": "N.Chandrababu Naidu",
+                        "govv": "E.S Lakshmi Narasimhan",
+                    },
+                    {
+                        "state": "Arunachal Pradesh",
+                        "city": "Itanagar",
+                        "cm": "Pema Khandu",
+                        "govv": "Brigadier Dr BD Mishra",
+                    },
+                    {
+                        "state": "Assam",
+                        "city": "Dispur  ",
+                        "cm": "Sarbananda Sonowal",
+                        "govv": "Jagdish Mukhin",
+                    },
+                    {
+                        "state": "Bihar",
+                        "city": "Patna",
+                        "cm": "Nitish Kumar",
+                        "govv": "Nitish Kumar",
+                    },
+                    {
+                        "state": "Chattisgarh",
+                        "city": "Raipur",
+                        "cm": "Dr. Raman Singh",
+                        "govv": "Balram Dass Tando",
+                    },
+                    {
+                        "state": "   Goa     ",
+                        "city": "    Panaji   ",
+                        "cm": "      Manohar Parrikar     ",
+                        "govv": "    Mridula Sinha        ",
+                    },
+                    {
+                        "state": "Gujarat",
+                        "city": "Gandhinagar",
+                        "cm": "Vijay Rupani",
+                        "govv": "Om Prakash Kohl",
+                    },
+                    {
+                        "state": "Haryana   ",
+                        "city": "    Chandigarh  ",
+                        "cm": "     Manohar Lal Khattar    ",
+                        "govv": "    Kaptan Singh Solanki       ",
+                    },
+                    {
+                        "state": "   Himachal Pradesh    ",
+                        "city": "   Simla, Dharamsala(Second Capital in Winter)   ",
+                        "cm": "     Jai Ram Thakur     ",
+                        "govv": "    Acharya Dev Vrat        ",
+                    },
+                    {
+                        "state": "  Jammu & Kashmir   ",
+                        "city": "   Srinagar(Summer)Jammu(Winter)  ",
+                        "cm": "      Mehbooba Mufti    ",
+                        "govv": "   Narinder Nath Vohra       ",
+                    },
+                    {
+                        "state": " Jharkhand ",
+                        "city": "    Ranchi   ",
+                        "cm": "  Raghubar Das     ",
+                        " govv": " Draupadi Murmu    ",
+                    },
+                    {
+                        "state": "   Karnataka    ",
+                        "city": "    Bangalore ",
+                        "cm": "     Siddaramaiah    ",
+                        "govv": "   Vajubhai Vala       ",
+                    },
+                    {
+                        "state": "  Kerala    ",
+                        "city": "   Thiruvananthapuram  ",
+                        "cm": "      Pinarayi Vijayan    ",
+                        "govv": "    P. Sathasivam       ",
+                    },
+                    {
+                        "state": "   Madhya Pradesh    ",
+                        "city": "   Bhopal   ",
+                        "cm": "     Shivraj Singh Chouhan     ",
+                        "govv": "   Anandiben Patel ",
+                    },
+                    {
+                        "state": "   Manipur    ",
+                        "city": "    Imphal  ",
+                        "cm": "   N. Biren Singh    ",
+                        "govv": "    Najma Heptulla       ",
+                    },
+                    {
+                        "state": " Meghalaya   ",
+                        "city": "    Shillong   ",
+                        "cm": "      Dr.Mukul Sangma ",
+                        "govv": "   Ganga Prasad       ",
+                    },
+                    {
+                        "state": "  Mizoram   ",
+                        "city": "   Aizawl  ",
+                        "cm": "     Lal Thanhawla    ",
+                        "govv": "   Nirbhay Sharma       ",
+                    },
+                    {
+                        "state": "  Nagaland   ",
+                        "city": " Kohima  ",
+                        "cm": "     T. R. Zeliang     ",
+                        "govv": "    Padmanabha Balkrishna Acharya       ",
+                    },
+                    {
+                        "state": "Odisha   ",
+                        "city": "    Bhubaneswar   ",
+                        "cm": "    Naveen Patnaik    ",
+                        "govv": "   S.C. Jamir       ",
+                    },
+                    {
+                        "state": "  Punjab  ",
+                        "city": "    Chandigarh   ",
+                        "cm": "      Amarinder Singh   ",
+                        "govv": "  V.P.Singh Badnore ",
+                    },
+                    {
+                        "state": "  Rajasthan  ",
+                        "city": "   Jaipur  ",
+                        "cm": "     Vasundhara Raje   ",
+                        "govv": "    Kalyan Singh      ",
+                    },
+                    {
+                        "state": "  Sikkim   ",
+                        "city": "    Gangtok   ",
+                        "cm": "     Pawan Kumar Chamling     ",
+                        "govv": "   Shriniwas Dadasaheb Patil      ",
+                    },
+                    {
+                        "state": "  Tamil Nadu   ",
+                        "city": "    Chennai ",
+                        "cm": "    Edappadi K. Palaniswamiar     ",
+                        "govv": "   Banwarilal Purohit        ",
+                    },
+
+
+                    {
+                        "state": "  Telangana ",
+                        "city": "   Hyderabad ",
+                        "cm": "     K Chandrasekhar Rao  ",
+                        "govv": "    E.S Lakshmi Narasimhan     ",
+                    },
+                    {
+                        "state": "  Tripura  ",
+                        "city": "   Agartala   ",
+                        "cm": "     Shri Biplab Kumar Deb  ",
+                        "govv": "   Tathagata Roy      ",
+                    },
+                    {
+                        "state": " Uttar Pradesh  ",
+                        "city": "   Lucknowi ",
+                        "cm": "    Yogi Adityanath   ",
+                        "govv": "  Ram Naik       ",
+                    },
+
+                    {
+                        "state": "  Uttarakhand ",
+                        "city": "  Dehradun  ",
+                        "cm": "    Trivendra Singh Rawat  ",
+                        "govv": "   Krishan Kant Paul ",
+                    },
+                    {
+                        "state": " West Bengal ",
+                        "city": "  Kolkata",
+                        "cm": "   Mamta Benerjee  ",
+                        "govv": " Keshari Nath Tripathi     ",
+                    },
+                ];
+            })
+    </script>
+
+
+    <style>
+        table,
+        th,
+        td {
+            border: 10px solid grey;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+        table tr:nth-child(odd) {
+            background-color: #f1f1f1;
+
+        }
+
+        table tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+
+        .heading th {
+            font-family: sans-serif;
+            background-color: dimgray;
+            color: aliceblue;
+        }
+
+        #searchbox {
+            position: center;
+            left: 250px;
+            top: 70px;
+            border: 2px solid red;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+
+
+
+
+
+
+
+</head>
+
+<body style="background-color:#ffa100">
+    <h1 style="color: #00075e">State | Capital | Chief Minister | Governor List</h1>
+    <div class="container">
+        <div class="col-md-12">
+            <div ng-controller="ctrl1">
+                <table>
+                    Search Box: <input type="text" placeholder="search" ng-model="search" id="searchbox">
+                    <tr class="heading">
+                        <th>Sr Num</th>
+                        <th>State Name</th>
+                        <th>Capital</th>
+                        <th>Chief Minister</th>
+                        <th>Governor</th>
+                    </tr>
+
+                    <tr ng-repeat="x in xyz | filter:search">
+                        <td>{{$index + 1}}</td>
+                        <td>{{x.state}}</td>
+                        <td>{{x.city}}</td>
+                        <td>{{x.cm}}</td>
+                        <td>{{x.govv}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
